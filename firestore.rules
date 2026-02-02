@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // User Profiles: Users can only read/write their own data
+    // This allows them to save their wishlist/recommendations.
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Future-proofing: If we move laptops to Firestore, allow public read
+    match /laptops/{laptopId} {
+      allow read: if true;
+      allow write: if false; // Admin only (setup via Console/CLI later)
+    }
+
+    // Default: Deny all other access
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

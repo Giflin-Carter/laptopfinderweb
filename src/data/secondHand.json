@@ -1,0 +1,28 @@
+[
+    {
+        "id": "sh1",
+        "sellerName": "Rahul Electronics",
+        "location": "Anna Nagar, Chennai",
+        "contact": "9876543210",
+        "model": "Dell Latitude 7490",
+        "price": 22000,
+        "condition": "Excellent",
+        "yearsUsed": 2,
+        "battery": "Good",
+        "verified": true,
+        "image": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+        "id": "sh2",
+        "sellerName": "Student Fix",
+        "location": "Adyar, Chennai",
+        "contact": "9988776655",
+        "model": "Lenovo ThinkPad T480",
+        "price": 25000,
+        "condition": "Good",
+        "yearsUsed": 3,
+        "battery": "Average",
+        "verified": true,
+        "image": "https://images.unsplash.com/photo-1531297461136-82lw9z3?auto=format&fit=crop&w=600&q=80"
+    }
+]
